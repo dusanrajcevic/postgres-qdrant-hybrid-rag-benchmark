@@ -1,0 +1,28 @@
+{
+  "dataset_size": 100000,
+  "target_recall10": 0.95,
+  "w1": {
+    "pg-hnsw": {
+      "ef_search": 60,
+      "tuning_mean_recall10": 0.964
+    },
+    "pg-diskann": {
+      "query_search_list_size": 100,
+      "query_rescore": 100,
+      "tuning_mean_recall10": 0.973,
+      "index": "labeled DiskANN"
+    },
+    "qdrant": {
+      "hnsw_ef": 40,
+      "tuning_mean_recall10": 0.977
+    }
+  },
+  "tuning_queries": [
+    0,
+    99
+  ],
+  "held_out_measurement_queries": [
+    100,
+    999
+  ]
+}

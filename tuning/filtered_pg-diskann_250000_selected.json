@@ -1,0 +1,65 @@
+{
+  "dataset_size": 250000,
+  "frozen_w1": {
+    "mean_recall10_tuning": 0.981,
+    "query_rescore": 100,
+    "query_search_list_size": 75
+  },
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "purpose": "PG-DISKANN 250K FILTERED STRATEGY SELECTION ONLY",
+  "strategy": {
+    "w2_0_1": {
+      "access_path": "scalar-index-first exact vector ranking",
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 1.07975,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 3.9530395999999994
+    },
+    "w2_1": {
+      "access_path": "scalar-index-first exact vector ranking",
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 6.114103999999999,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 9.3393205
+    },
+    "w2_10": {
+      "access_path": "label-aware DiskANN",
+      "mean_recall10": 0.9590000000000001,
+      "median_latency_ms_tuning_only": 11.5797295,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 14.207718449999998,
+      "plan_uses_diskann": true,
+      "query_rescore": 200,
+      "query_search_list_size": 100
+    },
+    "w2_50": {
+      "access_path": "label-aware DiskANN",
+      "mean_recall10": 0.9720000000000002,
+      "median_latency_ms_tuning_only": 7.1846665000000005,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 9.834853849999998,
+      "plan_uses_diskann": true,
+      "query_rescore": 100,
+      "query_search_list_size": 75
+    },
+    "w3": {
+      "access_path": "label-aware DiskANN",
+      "mean_recall10": 0.971,
+      "median_latency_ms_tuning_only": 19.6966255,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 23.927418449999998,
+      "plan_uses_diskann": true,
+      "query_rescore": 400,
+      "query_search_list_size": 200
+    }
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "All latency values are tuning-only, not paper results."
+}

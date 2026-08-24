@@ -1,0 +1,23 @@
+{
+  "dataset_size": 250000,
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "purpose": "QUERY-TIME PARAMETER SELECTION ONLY",
+  "selected": {
+    "engine": "qdrant",
+    "hnsw_ef": 60,
+    "mean_recall10": 0.9810000000000001,
+    "median_latency_ms_tuning_only": 6.1362915000000005,
+    "p95_latency_ms_tuning_only": 7.883849699999995,
+    "queries": 100
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "Tuning latency values are not paper results.",
+  "workload": "w1"
+}

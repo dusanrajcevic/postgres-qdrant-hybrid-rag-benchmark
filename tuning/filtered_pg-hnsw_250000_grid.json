@@ -1,0 +1,282 @@
+[
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 1.0,
+        "median_latency_ms_tuning_only": 0.9822919999999999,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 3.2545374999999996,
+        "plan_uses_hnsw": false
+      },
+      "w2_1": {
+        "mean_recall10": 0.7970000000000002,
+        "median_latency_ms_tuning_only": 9.693875,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 11.44385,
+        "plan_uses_hnsw": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.872,
+        "median_latency_ms_tuning_only": 3.5782085,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 5.843249699999999,
+        "plan_uses_hnsw": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9390000000000001,
+        "median_latency_ms_tuning_only": 2.8687085000000003,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 6.299211849999999,
+        "plan_uses_hnsw": true
+      },
+      "w3": {
+        "mean_recall10": 0.863,
+        "median_latency_ms_tuning_only": 5.1904375,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 8.3864681,
+        "plan_uses_hnsw": true
+      }
+    },
+    "max_scan_tuples": 5000
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 1.0,
+        "median_latency_ms_tuning_only": 0.9375415,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 2.1519892499999997,
+        "plan_uses_hnsw": false
+      },
+      "w2_1": {
+        "mean_recall10": 0.8639999999999999,
+        "median_latency_ms_tuning_only": 15.433,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 17.98615625,
+        "plan_uses_hnsw": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.872,
+        "median_latency_ms_tuning_only": 3.346063,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 5.84073925,
+        "plan_uses_hnsw": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9390000000000001,
+        "median_latency_ms_tuning_only": 2.0225005,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 3.22142085,
+        "plan_uses_hnsw": true
+      },
+      "w3": {
+        "mean_recall10": 0.863,
+        "median_latency_ms_tuning_only": 5.0339165,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 8.564133949999999,
+        "plan_uses_hnsw": true
+      }
+    },
+    "max_scan_tuples": 10000
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 1.0,
+        "median_latency_ms_tuning_only": 0.919083,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 1.2883478999999993,
+        "plan_uses_hnsw": false
+      },
+      "w2_1": {
+        "mean_recall10": 0.8770000000000002,
+        "median_latency_ms_tuning_only": 19.207250000000002,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 27.77358925,
+        "plan_uses_hnsw": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.872,
+        "median_latency_ms_tuning_only": 3.4045005,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 5.252641649999999,
+        "plan_uses_hnsw": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9390000000000001,
+        "median_latency_ms_tuning_only": 1.9952295,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 2.733902399999999,
+        "plan_uses_hnsw": true
+      },
+      "w3": {
+        "mean_recall10": 0.863,
+        "median_latency_ms_tuning_only": 4.98,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 8.63069165,
+        "plan_uses_hnsw": true
+      }
+    },
+    "max_scan_tuples": 20000
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 1.0,
+        "median_latency_ms_tuning_only": 0.903083,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 1.14988785,
+        "plan_uses_hnsw": false
+      },
+      "w2_1": {
+        "mean_recall10": 0.8770000000000002,
+        "median_latency_ms_tuning_only": 20.284374999999997,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 32.32199375,
+        "plan_uses_hnsw": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.872,
+        "median_latency_ms_tuning_only": 3.3199585000000003,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 5.449245549999999,
+        "plan_uses_hnsw": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9390000000000001,
+        "median_latency_ms_tuning_only": 1.923937,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 2.7224854,
+        "plan_uses_hnsw": true
+      },
+      "w3": {
+        "mean_recall10": 0.863,
+        "median_latency_ms_tuning_only": 4.982104,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 8.1872917,
+        "plan_uses_hnsw": true
+      }
+    },
+    "max_scan_tuples": 40000
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 1.0,
+        "median_latency_ms_tuning_only": 0.9521664999999999,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 2.4227076999999992,
+        "plan_uses_hnsw": false
+      },
+      "w2_1": {
+        "mean_recall10": 0.8770000000000002,
+        "median_latency_ms_tuning_only": 20.5606875,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 31.369597949999992,
+        "plan_uses_hnsw": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.872,
+        "median_latency_ms_tuning_only": 3.5033955,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 6.040823249999998,
+        "plan_uses_hnsw": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9390000000000001,
+        "median_latency_ms_tuning_only": 1.9445420000000002,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 2.7980541999999997,
+        "plan_uses_hnsw": true
+      },
+      "w3": {
+        "mean_recall10": 0.863,
+        "median_latency_ms_tuning_only": 5.788166,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 9.29811075,
+        "plan_uses_hnsw": true
+      }
+    },
+    "max_scan_tuples": 80000
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 1.0,
+        "median_latency_ms_tuning_only": 0.827,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 1.0629003499999998,
+        "plan_uses_hnsw": false
+      },
+      "w2_1": {
+        "mean_recall10": 0.8770000000000002,
+        "median_latency_ms_tuning_only": 20.504520499999998,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 32.818650600000005,
+        "plan_uses_hnsw": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.872,
+        "median_latency_ms_tuning_only": 3.5237295,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 5.2134940499999995,
+        "plan_uses_hnsw": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9390000000000001,
+        "median_latency_ms_tuning_only": 2.154604,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 3.986097899999999,
+        "plan_uses_hnsw": true
+      },
+      "w3": {
+        "mean_recall10": 0.863,
+        "median_latency_ms_tuning_only": 5.0537505,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 8.408964899999999,
+        "plan_uses_hnsw": true
+      }
+    },
+    "max_scan_tuples": 125000
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 1.0,
+        "median_latency_ms_tuning_only": 0.8699375,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 1.1601544999999998,
+        "plan_uses_hnsw": false
+      },
+      "w2_1": {
+        "mean_recall10": 0.8770000000000002,
+        "median_latency_ms_tuning_only": 19.628646,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 29.62505065,
+        "plan_uses_hnsw": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.872,
+        "median_latency_ms_tuning_only": 3.2781874999999996,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 5.2815476,
+        "plan_uses_hnsw": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9390000000000001,
+        "median_latency_ms_tuning_only": 2.0039995,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 2.67422915,
+        "plan_uses_hnsw": true
+      },
+      "w3": {
+        "mean_recall10": 0.863,
+        "median_latency_ms_tuning_only": 4.94725,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 8.257350299999999,
+        "plan_uses_hnsw": true
+      }
+    },
+    "max_scan_tuples": 250000
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "dataset_size": 250000,
+  "frozen_w1_hnsw_ef": 60,
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "purpose": "QDRANT 250K FILTERED STRATEGY SELECTION ONLY",
+  "strategy": {
+    "w2_0_1": {
+      "access_path": "Qdrant filter-aware approximate search",
+      "hnsw_ef": 80,
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 4.686646,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 7.1091143
+    },
+    "w2_1": {
+      "access_path": "Qdrant filter-aware approximate search",
+      "hnsw_ef": 80,
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 7.1699165,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 11.5598232
+    },
+    "w2_10": {
+      "access_path": "Qdrant filter-aware approximate search",
+      "hnsw_ef": 40,
+      "mean_recall10": 0.9780000000000001,
+      "median_latency_ms_tuning_only": 5.54725,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 8.0284625
+    },
+    "w2_50": {
+      "access_path": "Qdrant filter-aware approximate search",
+      "hnsw_ef": 40,
+      "mean_recall10": 0.9580000000000001,
+      "median_latency_ms_tuning_only": 6.369521000000001,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 9.71491635
+    },
+    "w3": {
+      "access_path": "Qdrant filter-aware approximate search",
+      "hnsw_ef": 200,
+      "mean_recall10": 0.9670000000000002,
+      "median_latency_ms_tuning_only": 9.1164585,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 13.7373101
+    }
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "All latency values are tuning-only, not paper results."
+}

@@ -1,0 +1,62 @@
+{
+  "dataset_size": 100000,
+  "frozen_w1_ef_search": 60,
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "purpose": "PG-HNSW FILTERED STRATEGY SELECTION ONLY",
+  "strategy": {
+    "w2_0_1": {
+      "access_path": "planner-selected filtered query with HNSW available",
+      "ef_search": 60,
+      "iterative_scan": "strict_order",
+      "max_scan_tuples": 20000,
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 0.5349794999999999,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 0.8742955499999999,
+      "plan_uses_hnsw": false,
+      "scan_mem_multiplier": 2
+    },
+    "w2_1": {
+      "access_path": "scalar-index-first exact vector ranking",
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 2.1658749999999998,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 3.0069371499999997
+    },
+    "w2_10": {
+      "access_path": "scalar-index-first exact vector ranking",
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 24.169625,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 26.432133649999997
+    },
+    "w2_50": {
+      "access_path": "planner-selected filtered query with HNSW available",
+      "ef_search": 60,
+      "iterative_scan": "strict_order",
+      "max_scan_tuples": 20000,
+      "mean_recall10": 0.9520000000000002,
+      "median_latency_ms_tuning_only": 1.5867710000000002,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 2.6805666999999995,
+      "plan_uses_hnsw": true,
+      "scan_mem_multiplier": 2
+    },
+    "w3": {
+      "access_path": "scalar-index-first exact vector ranking",
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 18.250354,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 20.889714599999998
+    }
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "All latency values are tuning-only, not paper results."
+}

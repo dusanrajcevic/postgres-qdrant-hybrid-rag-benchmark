@@ -1,0 +1,27 @@
+{
+  "seed": 20260823,
+  "dataset_sizes": [
+    100000,
+    250000,
+    500000,
+    1000000
+  ],
+  "max_vectors": 1000000,
+  "query_count": 1000,
+  "chunks_per_document": 4,
+  "msmarco_corpus_records": 8841823,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_model_revision": "ea78891063587eb050ed4166b20062eaf978037c",
+  "embedding_dimensions": 384,
+  "postgres": {
+    "host": "localhost",
+    "port": 5433,
+    "dbname": "benchmark",
+    "user": "benchmark",
+    "password": "benchmark"
+  },
+  "qdrant": {
+    "url": "http://localhost:6333",
+    "collection": "benchmark_vectors"
+  }
+}

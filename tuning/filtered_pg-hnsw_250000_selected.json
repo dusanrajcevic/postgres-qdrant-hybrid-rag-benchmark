@@ -1,0 +1,57 @@
+{
+  "dataset_size": 250000,
+  "frozen_w1_ef_search": 60,
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "purpose": "PG-HNSW 250K FILTERED STRATEGY SELECTION ONLY",
+  "strategy": {
+    "w2_0_1": {
+      "access_path": "planner-selected scalar path with HNSW available",
+      "ef_search": 60,
+      "iterative_scan": "strict_order",
+      "max_scan_tuples": 125000,
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 0.827,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 1.0629003499999998,
+      "plan_uses_hnsw": false,
+      "scan_mem_multiplier": 2
+    },
+    "w2_1": {
+      "access_path": "scalar-index-first exact vector ranking",
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 5.5635414999999995,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 6.223414249999999
+    },
+    "w2_10": {
+      "access_path": "scalar-index-first exact vector ranking",
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 61.144062500000004,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 64.3577143
+    },
+    "w2_50": {
+      "access_path": "scalar-index-first exact vector ranking",
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 204.4219165,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 215.11790595
+    },
+    "w3": {
+      "access_path": "scalar-index-first exact vector ranking",
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 59.642688,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 63.04787225
+    }
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "All latency values are tuning-only, not paper results."
+}

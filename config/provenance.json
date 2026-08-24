@@ -1,0 +1,7 @@
+{
+  "msmarco_official_dataset_page": "https://github.com/microsoft/msmarco/blob/master/Datasets.md",
+  "msmarco_collection_url": "https://msmarco.z22.web.core.windows.net/msmarcoranking/collection.tar.gz",
+  "msmarco_queries_url": "https://msmarco.z22.web.core.windows.net/msmarcoranking/queries.tar.gz",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_model_revision": "ea78891063587eb050ed4166b20062eaf978037c"
+}

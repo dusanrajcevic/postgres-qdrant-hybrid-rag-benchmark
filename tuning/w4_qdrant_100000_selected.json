@@ -1,0 +1,29 @@
+{
+  "candidate_pagination": "Single Qdrant request per query; candidate_limit is tuned. No approximate offset pagination is used.",
+  "dataset_size": 100000,
+  "latency_scope": "End-to-end: Qdrant candidate search plus PostgreSQL permission validation inside the same timed request.",
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "permissions_denormalized_into_qdrant": false,
+  "purpose": "QDRANT+POSTGRESQL W4 ACL STRATEGY SELECTION ONLY",
+  "selected": {
+    "access_path": "Qdrant filtered approximate candidates + PostgreSQL ACL validation",
+    "candidate_limit": 128,
+    "exact": false,
+    "hnsw_ef": 150,
+    "mean_recall10": 1.0,
+    "median_latency_ms_tuning_only": 6.180937,
+    "min_candidates_returned_by_qdrant": 128,
+    "min_returned": 10,
+    "p95_latency_ms_tuning_only": 11.25336845
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "All latency values are tuning-only, not paper results.",
+  "workload": "w4_acl"
+}

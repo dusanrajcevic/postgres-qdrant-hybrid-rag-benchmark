@@ -1,0 +1,13 @@
+{
+  "build_parameters": {
+    "ef_construct": 100,
+    "indexing_threshold_kb": 20000,
+    "m": 16
+  },
+  "build_seconds": 136.72358433299814,
+  "dataset_size": 100000,
+  "engine": "qdrant",
+  "indexed_vectors_count": 100000,
+  "purpose": "TUNING BUILD ONLY - NOT PAPER RESULT",
+  "status": "green"
+}

@@ -1,0 +1,22 @@
+{
+  "dataset_size": 100000,
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "purpose": "PG-DISKANN W4 ACL STRATEGY SELECTION ONLY",
+  "selected": {
+    "access_path": "scalar-metadata + live relational ACL + exact vector ranking",
+    "mean_recall10": 1.0,
+    "median_latency_ms_tuning_only": 2.1112295,
+    "min_returned": 10,
+    "p95_latency_ms_tuning_only": 3.20708895
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "All latency values are tuning-only, not paper results.",
+  "workload": "w4_acl"
+}

@@ -1,0 +1,35 @@
+{
+  "paper_title": "Relational Extensions vs. Dedicated Vector Engines: An Empirical Performance Benchmark of PostgreSQL (pgvector) and Qdrant in Hybrid RAG Architectures",
+  "measured_dataset_sizes": [
+    100000,
+    250000
+  ],
+  "top_k": 10,
+  "target_recall10_used_for_tuning": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "measurement_query_ranks": [
+    100,
+    999
+  ],
+  "measurement_queries_per_workload_per_repetition": 900,
+  "warmup_executions_per_workload_per_repetition": 200,
+  "repetitions": 3,
+  "workloads": [
+    "w1",
+    "w2_50",
+    "w2_10",
+    "w2_1",
+    "w2_0_1",
+    "w3",
+    "w4_acl"
+  ],
+  "paper_observations_per_dataset_size": 56700,
+  "notes": [
+    "The data pipeline created one deterministic 1,000,000-passage sample so that all dataset sizes are nested prefixes.",
+    "The paper reports held-out measurements only at 100,000 and 250,000 vectors.",
+    "Tuning results are retained for provenance but are not paper measurement results."
+  ]
+}

@@ -1,0 +1,37 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local data and downloaded models
+data/
+
+# Generated analysis and temporary outputs
+results/analysis/
+results/archives/
+*.log
+*.tmp
+*.bak
+*.part
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+
+# Editors and operating systems
+.DS_Store
+__MACOSX/
+.idea/
+.vscode/
+*~
+
+# Local environment files
+.env
+.env.*
+!.env.example

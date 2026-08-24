@@ -1,0 +1,12 @@
+{
+  "build_parameters": {
+    "ef_construction": 64,
+    "m": 16
+  },
+  "build_seconds": 56.881300416978775,
+  "dataset_size": 100000,
+  "engine": "pg-hnsw",
+  "filter_metadata_prepared": true,
+  "index_bytes": 204808192,
+  "purpose": "TUNING BUILD ONLY - NOT PAPER RESULT"
+}

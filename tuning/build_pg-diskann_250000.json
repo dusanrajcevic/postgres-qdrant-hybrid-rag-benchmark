@@ -1,0 +1,17 @@
+{
+  "build_parameters": {
+    "construction_search_list_size": 100,
+    "labels_column": "labels",
+    "max_alpha": 1.2,
+    "num_neighbors": 50,
+    "parallel_build_forced": false,
+    "storage_layout": "memory_optimized default"
+  },
+  "build_seconds": 1823.999723624991,
+  "dataset_size": 250000,
+  "engine": "pg-diskann",
+  "filter_metadata_prepared": true,
+  "important": "This labeled DiskANN index is the index configuration intended for W1-W3.",
+  "index_bytes": 149831680,
+  "purpose": "TUNING BUILD ONLY - NOT PAPER RESULT"
+}

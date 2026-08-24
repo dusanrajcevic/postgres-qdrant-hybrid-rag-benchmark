@@ -1,0 +1,51 @@
+{
+  "dataset_size": 100000,
+  "target_recall10": 0.95,
+  "query_split": {
+    "tuning": [
+      0,
+      99
+    ],
+    "measurement": [
+      100,
+      999
+    ]
+  },
+  "w1": {
+    "pg_hnsw": {
+      "ef_search": 60,
+      "tuning_recall10": 0.964
+    },
+    "pg_diskann": {
+      "query_search_list_size": 100,
+      "query_rescore": 100,
+      "tuning_recall10": 0.973,
+      "index": "labeled"
+    },
+    "qdrant": {
+      "hnsw_ef": 40,
+      "tuning_recall10": 0.977
+    }
+  },
+  "pg_diskann_filtered": {
+    "w2_50": {
+      "path": "label-aware DiskANN",
+      "search_list": 100,
+      "rescore": 100
+    },
+    "w2_10": {
+      "path": "label-aware DiskANN",
+      "search_list": 100,
+      "rescore": 100
+    },
+    "w2_1": {
+      "path": "scalar-first exact"
+    },
+    "w2_0_1": {
+      "path": "scalar-first exact"
+    },
+    "w3": {
+      "path": "scalar-first exact"
+    }
+  }
+}

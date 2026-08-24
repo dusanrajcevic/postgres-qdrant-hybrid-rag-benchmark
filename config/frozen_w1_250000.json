@@ -1,0 +1,29 @@
+{
+  "dataset_size": 250000,
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "w1": {
+    "pg-hnsw": {
+      "ef_search": 60,
+      "mean_recall10_tuning": 0.955
+    },
+    "pg-diskann": {
+      "query_search_list_size": 75,
+      "query_rescore": 100,
+      "mean_recall10_tuning": 0.981
+    },
+    "qdrant": {
+      "hnsw_ef": 60,
+      "mean_recall10_tuning": 0.981
+    }
+  },
+  "selection_rule": "Among configurations meeting mean Recall@10 >= 0.95 and returning 10 results for every tuning query, choose the lowest observed tuning median.",
+  "warning": "Tuning latency values are not paper results."
+}

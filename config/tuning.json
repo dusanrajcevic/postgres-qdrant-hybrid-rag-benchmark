@@ -1,0 +1,8 @@
+{
+  "target_recall10": 0.95,
+  "tuning_query_start": 0,
+  "tuning_query_count": 100,
+  "measurement_query_start": 100,
+  "measurement_query_count": 900,
+  "note": "Ranks 0-99 tuning only; ranks 100-999 reserved for reported measurements."
+}

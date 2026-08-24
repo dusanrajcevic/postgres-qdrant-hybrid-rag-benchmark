@@ -1,0 +1,87 @@
+{
+  "compose_config": {
+    "command": [
+      "docker",
+      "compose",
+      "config"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "name: vector_benchmark_starter\nservices:\n  postgres:\n    cpus: 6\n    environment:\n      POSTGRES_DB: benchmark\n      POSTGRES_PASSWORD: benchmark\n      POSTGRES_USER: benchmark\n    image: timescale/timescaledb-ha:pg18.4-ts2.29.1-all-oss\n    mem_limit: \"8589934592\"\n    networks:\n      default: null\n    platform: linux/arm64\n    ports:\n      - mode: ingress\n        target: 5432\n        published: \"5433\"\n        protocol: tcp\n    shm_size: \"1073741824\"\n    volumes:\n      - type: volume\n        source: pgdata\n        target: /home/postgres/pgdata/data\n        volume: {}\n  qdrant:\n    cpus: 6\n    image: qdrant/qdrant:v1.18.1\n    mem_limit: \"8589934592\"\n    networks:\n      default: null\n    platform: linux/arm64\n    ports:\n      - mode: ingress\n        target: 6333\n        published: \"6333\"\n        protocol: tcp\n      - mode: ingress\n        target: 6334\n        published: \"6334\"\n        protocol: tcp\n    volumes:\n      - type: volume\n        source: qdrantdata\n        target: /qdrant/storage\n        volume: {}\nnetworks:\n  default:\n    name: vector_benchmark_starter_default\nvolumes:\n  pgdata:\n    name: vector_benchmark_starter_pgdata\n  qdrantdata:\n    name: vector_benchmark_starter_qdrantdata"
+  },
+  "docker_compose_ps": {
+    "command": [
+      "docker",
+      "compose",
+      "ps"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "NAME                                  IMAGE                                              COMMAND                  SERVICE    CREATED       STATUS       PORTS\nvector_benchmark_starter-postgres-1   timescale/timescaledb-ha:pg18.4-ts2.29.1-all-oss   \"/docker-entrypoint.\u2026\"   postgres   6 hours ago   Up 5 hours   0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp\nvector_benchmark_starter-qdrant-1     qdrant/qdrant:v1.18.1                              \"./entrypoint.sh\"        qdrant     6 hours ago   Up 6 hours   0.0.0.0:6333-6334->6333-6334/tcp, [::]:6333-6334->6333-6334/tcp"
+  },
+  "docker_compose_version": {
+    "command": [
+      "docker",
+      "compose",
+      "version"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "Docker Compose version v5.4.0"
+  },
+  "docker_version": {
+    "command": [
+      "docker",
+      "version",
+      "--format",
+      "{{json .}}"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"Client\":{\"Version\":\"29.7.2\",\"ApiVersion\":\"1.55\",\"DefaultAPIVersion\":\"1.55\",\"GitCommit\":\"a7dcaa6\",\"GoVersion\":\"go1.26.5\",\"Os\":\"darwin\",\"Arch\":\"arm64\",\"BuildTime\":\"Wed Aug  5 18:27:50 2026\",\"Context\":\"desktop-linux\"},\"Server\":{\"Platform\":{\"Name\":\"Docker Desktop 4.87.0 (236836)\"},\"Version\":\"29.7.2\",\"ApiVersion\":\"1.55\",\"MinAPIVersion\":\"1.40\",\"Os\":\"linux\",\"Arch\":\"arm64\",\"Components\":[{\"Name\":\"Engine\",\"Version\":\"29.7.2\",\"Details\":{\"ApiVersion\":\"1.55\",\"Arch\":\"arm64\",\"BuildTime\":\"Wed Aug  5 18:28:35 2026\",\"Experimental\":\"false\",\"GitCommit\":\"6a43e3d\",\"GoVersion\":\"go1.26.5\",\"KernelVersion\":\"7.0.12-linuxkit\",\"MinAPIVersion\":\"1.40\",\"Module\":\"github.com/moby/moby/v2\",\"ModuleVersion\":\"v2.0.0+unknown\",\"Os\":\"linux\"}},{\"Name\":\"containerd\",\"Version\":\"v2.2.5\",\"Details\":{\"GitCommit\":\"e53c7c1516c3b2bff98eb76f1f4117477e6f4e66\"}},{\"Name\":\"runc\",\"Version\":\"1.3.6\",\"Details\":{\"GitCommit\":\"v1.3.6-0-g491b69ba\"}},{\"Name\":\"docker-init\",\"Version\":\"0.19.0\",\"Details\":{\"GitCommit\":\"de40ad0\"}}],\"GitCommit\":\"6a43e3d\",\"GoVersion\":\"go1.26.5\",\"KernelVersion\":\"7.0.12-linuxkit\",\"BuildTime\":\"2026-08-05T18:28:35.000000000+00:00\"}}"
+  },
+  "machine": "arm64",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "postgres_image": {
+    "command": [
+      "docker",
+      "compose",
+      "images",
+      "postgres"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "CONTAINER                             REPOSITORY                 TAG                       PLATFORM            IMAGE ID            SIZE                CREATED\nvector_benchmark_starter-postgres-1   timescale/timescaledb-ha   pg18.4-ts2.29.1-all-oss   linux/arm64         aa641ed52088        3.76GB              5 days ago"
+  },
+  "postgres_versions": {
+    "command": [
+      "docker",
+      "compose",
+      "exec",
+      "-T",
+      "postgres",
+      "psql",
+      "-U",
+      "benchmark",
+      "-d",
+      "benchmark",
+      "-Atc",
+      "SELECT version(); SELECT extname||'='||extversion FROM pg_extension WHERE extname IN ('vector','vectorscale') ORDER BY extname;"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "PostgreSQL 18.4 (Ubuntu 18.4-1.pgdg22.04+1) on aarch64-unknown-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0, 64-bit\nvector=0.8.6\nvectorscale=0.9.0"
+  },
+  "python": "3.11.11 (main, Apr  4 2025, 05:24:59) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "qdrant_image": {
+    "command": [
+      "docker",
+      "compose",
+      "images",
+      "qdrant"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "CONTAINER                           REPOSITORY          TAG                 PLATFORM            IMAGE ID            SIZE                CREATED\nvector_benchmark_starter-qdrant-1   qdrant/qdrant       v1.18.1             linux/arm64         934474a62b86        199MB               3 months ago"
+  }
+}

@@ -1,0 +1,10 @@
+requests>=2.32
+pyarrow>=17
+numpy>=2.0
+pandas>=2.2
+tqdm>=4.66
+sentence-transformers>=3.0
+huggingface-hub>=0.24
+pgvector>=0.3
+psycopg[binary]>=3.2
+qdrant-client>=1.15

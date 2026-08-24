@@ -1,0 +1,24 @@
+{
+  "dataset_size": 250000,
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "purpose": "QUERY-TIME PARAMETER SELECTION ONLY",
+  "selected": {
+    "engine": "pg-diskann",
+    "mean_recall10": 0.9810000000000002,
+    "median_latency_ms_tuning_only": 6.3898955,
+    "p95_latency_ms_tuning_only": 9.496176449999998,
+    "queries": 100,
+    "query_rescore": 100,
+    "query_search_list_size": 75
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "Tuning latency values are not paper results.",
+  "workload": "w1"
+}

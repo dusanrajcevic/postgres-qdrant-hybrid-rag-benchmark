@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: timescale/timescaledb-ha:pg18.4-ts2.29.1-all-oss
+    platform: linux/arm64
+    environment:
+      POSTGRES_USER: benchmark
+      POSTGRES_PASSWORD: benchmark
+      POSTGRES_DB: benchmark
+    ports:
+      - "5433:5432"
+    shm_size: "1gb"
+    cpus: 6
+    mem_limit: 8g
+    volumes:
+      - pgdata:/home/postgres/pgdata/data
+
+  qdrant:
+    image: qdrant/qdrant:v1.18.1
+    platform: linux/arm64
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    cpus: 6
+    mem_limit: 8g
+    volumes:
+      - qdrantdata:/qdrant/storage
+
+volumes:
+  pgdata:
+  qdrantdata:

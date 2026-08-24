@@ -1,0 +1,51 @@
+{
+  "dataset_size": 250000,
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "w1": {
+    "pg-hnsw": {
+      "ef_search": 60,
+      "mean_recall10_tuning": 0.955
+    },
+    "pg-diskann": {
+      "query_search_list_size": 75,
+      "query_rescore": 100,
+      "mean_recall10_tuning": 0.981
+    },
+    "qdrant": {
+      "hnsw_ef": 60,
+      "mean_recall10_tuning": 0.981
+    }
+  },
+  "w2_w3": {
+    "pg-hnsw": {
+      "w2_50": "scalar-index-first exact",
+      "w2_10": "scalar-index-first exact",
+      "w2_1": "scalar-index-first exact",
+      "w2_0_1": "planner-selected scalar path with HNSW available",
+      "w3": "scalar-index-first exact"
+    },
+    "pg-diskann": {
+      "w2_50": "label-aware DiskANN search_list=75 rescore=100",
+      "w2_10": "label-aware DiskANN search_list=100 rescore=200",
+      "w2_1": "scalar-index-first exact",
+      "w2_0_1": "scalar-index-first exact",
+      "w3": "label-aware DiskANN search_list=200 rescore=400"
+    },
+    "qdrant": {
+      "w2_50": "filter-aware approximate hnsw_ef=40",
+      "w2_10": "filter-aware approximate hnsw_ef=40",
+      "w2_1": "filter-aware approximate hnsw_ef=80",
+      "w2_0_1": "filter-aware approximate hnsw_ef=80",
+      "w3": "filter-aware approximate hnsw_ef=200"
+    }
+  },
+  "warning": "All values above are tuning-phase selections, not paper results."
+}

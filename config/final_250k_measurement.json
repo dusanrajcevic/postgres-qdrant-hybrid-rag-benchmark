@@ -1,0 +1,137 @@
+{
+  "purpose": "FROZEN 250K HELD-OUT MEASUREMENT CONFIGURATION",
+  "dataset_size": 250000,
+  "target_recall10_used_during_tuning": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "measurement_query_ranks": [
+    100,
+    999
+  ],
+  "measurement_query_count": 900,
+  "warmup_executions_per_workload_per_repetition": 200,
+  "warmup_source_query_ranks": [
+    0,
+    99
+  ],
+  "repetitions": 3,
+  "measurement_order_seed": 20260823,
+  "top_k": 10,
+  "workloads": [
+    "w1",
+    "w2_50",
+    "w2_10",
+    "w2_1",
+    "w2_0_1",
+    "w3",
+    "w4_acl"
+  ],
+  "strategies": {
+    "pg-hnsw": {
+      "w1": {
+        "path": "hnsw",
+        "ef_search": 60,
+        "iterative_scan": "off"
+      },
+      "w2_50": {
+        "path": "scalar_first_exact"
+      },
+      "w2_10": {
+        "path": "scalar_first_exact"
+      },
+      "w2_1": {
+        "path": "scalar_first_exact"
+      },
+      "w2_0_1": {
+        "path": "planner_filtered_query_scalar_expected",
+        "ef_search": 60,
+        "iterative_scan": "strict_order",
+        "max_scan_tuples": 125000,
+        "scan_mem_multiplier": 2
+      },
+      "w3": {
+        "path": "scalar_first_exact"
+      },
+      "w4_acl": {
+        "path": "planner_acl_scalar_expected",
+        "ef_search": 60,
+        "iterative_scan": "strict_order",
+        "max_scan_tuples": 40000,
+        "scan_mem_multiplier": 2
+      }
+    },
+    "pg-diskann": {
+      "w1": {
+        "path": "diskann",
+        "query_search_list_size": 75,
+        "query_rescore": 100
+      },
+      "w2_50": {
+        "path": "label_aware_diskann",
+        "query_search_list_size": 75,
+        "query_rescore": 100
+      },
+      "w2_10": {
+        "path": "label_aware_diskann",
+        "query_search_list_size": 100,
+        "query_rescore": 200
+      },
+      "w2_1": {
+        "path": "scalar_first_exact"
+      },
+      "w2_0_1": {
+        "path": "scalar_first_exact"
+      },
+      "w3": {
+        "path": "label_aware_diskann_w3",
+        "query_search_list_size": 200,
+        "query_rescore": 400
+      },
+      "w4_acl": {
+        "path": "scalar_acl_exact"
+      }
+    },
+    "qdrant": {
+      "w1": {
+        "path": "approx",
+        "hnsw_ef": 60
+      },
+      "w2_50": {
+        "path": "filtered_approx",
+        "hnsw_ef": 40
+      },
+      "w2_10": {
+        "path": "filtered_approx",
+        "hnsw_ef": 40
+      },
+      "w2_1": {
+        "path": "filtered_approx",
+        "hnsw_ef": 80
+      },
+      "w2_0_1": {
+        "path": "filtered_approx",
+        "hnsw_ef": 80
+      },
+      "w3": {
+        "path": "filtered_approx",
+        "hnsw_ef": 200
+      },
+      "w4_acl": {
+        "path": "qdrant_candidates_plus_postgres_acl",
+        "hnsw_ef": 80,
+        "candidate_limit": 128,
+        "permissions_denormalized": false
+      }
+    }
+  },
+  "notes": [
+    "No parameter selection is permitted from measurement ranks 100-999.",
+    "Warmups use only tuning ranks 0-99, cycled to 200 executions.",
+    "Each repetition measures every held-out query exactly once per workload.",
+    "Latency is client-side wall-clock time with persistent connections/clients.",
+    "Qdrant W4 latency includes Qdrant candidate search plus PostgreSQL ACL validation.",
+    "Held-out recall/completeness anomalies are recorded, not used to retune or abort."
+  ]
+}

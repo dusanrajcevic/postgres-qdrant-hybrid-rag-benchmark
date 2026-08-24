@@ -1,0 +1,23 @@
+{
+  "dataset_size": 250000,
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "purpose": "QUERY-TIME PARAMETER SELECTION ONLY",
+  "selected": {
+    "ef_search": 60,
+    "engine": "pg-hnsw",
+    "mean_recall10": 0.955,
+    "median_latency_ms_tuning_only": 2.1886455,
+    "p95_latency_ms_tuning_only": 3.09916395,
+    "queries": 100
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "Tuning latency values are not paper results.",
+  "workload": "w1"
+}

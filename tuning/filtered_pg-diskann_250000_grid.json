@@ -1,0 +1,330 @@
+[
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 0.019000000000000003,
+        "median_latency_ms_tuning_only": 0.8097920000000001,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 2.1053972999999995,
+        "plan_uses_diskann": true
+      },
+      "w2_1": {
+        "mean_recall10": 0.14200000000000002,
+        "median_latency_ms_tuning_only": 7.843875000000001,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 9.42678125,
+        "plan_uses_diskann": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.919,
+        "median_latency_ms_tuning_only": 7.8123545,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 9.48589825,
+        "plan_uses_diskann": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9720000000000002,
+        "median_latency_ms_tuning_only": 7.1846665000000005,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 9.834853849999998,
+        "plan_uses_diskann": true
+      },
+      "w3": {
+        "mean_recall10": 0.8770000000000002,
+        "median_latency_ms_tuning_only": 7.6373745,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 10.814337199999999,
+        "plan_uses_diskann": true
+      }
+    },
+    "query_rescore": 100,
+    "query_search_list_size": 75
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 0.019000000000000003,
+        "median_latency_ms_tuning_only": 0.8704375,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 2.49445625,
+        "plan_uses_diskann": true
+      },
+      "w2_1": {
+        "mean_recall10": 0.154,
+        "median_latency_ms_tuning_only": 8.485833,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 11.009283649999997,
+        "plan_uses_diskann": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.929,
+        "median_latency_ms_tuning_only": 8.012145499999999,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 10.04590975,
+        "plan_uses_diskann": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.975,
+        "median_latency_ms_tuning_only": 7.963146,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 9.8379423,
+        "plan_uses_diskann": true
+      },
+      "w3": {
+        "mean_recall10": 0.8790000000000002,
+        "median_latency_ms_tuning_only": 8.4168335,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 10.312252749999999,
+        "plan_uses_diskann": true
+      }
+    },
+    "query_rescore": 100,
+    "query_search_list_size": 100
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 0.019000000000000003,
+        "median_latency_ms_tuning_only": 0.9684375000000001,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 1.9982770999999997,
+        "plan_uses_diskann": true
+      },
+      "w2_1": {
+        "mean_recall10": 0.199,
+        "median_latency_ms_tuning_only": 11.924770500000001,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 15.5722229,
+        "plan_uses_diskann": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.9590000000000001,
+        "median_latency_ms_tuning_only": 11.5797295,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 14.207718449999998,
+        "plan_uses_diskann": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9880000000000001,
+        "median_latency_ms_tuning_only": 10.540874500000001,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 13.437639899999999,
+        "plan_uses_diskann": true
+      },
+      "w3": {
+        "mean_recall10": 0.9270000000000002,
+        "median_latency_ms_tuning_only": 11.459750499999998,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 14.294341649999998,
+        "plan_uses_diskann": true
+      }
+    },
+    "query_rescore": 200,
+    "query_search_list_size": 100
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 0.019000000000000003,
+        "median_latency_ms_tuning_only": 0.8760209999999999,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 2.241675299999999,
+        "plan_uses_diskann": true
+      },
+      "w2_1": {
+        "mean_recall10": 0.21400000000000002,
+        "median_latency_ms_tuning_only": 14.382229,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 16.525825299999997,
+        "plan_uses_diskann": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.9620000000000001,
+        "median_latency_ms_tuning_only": 12.549729,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 15.19985,
+        "plan_uses_diskann": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9870000000000002,
+        "median_latency_ms_tuning_only": 12.619167000000001,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 16.729695850000002,
+        "plan_uses_diskann": true
+      },
+      "w3": {
+        "mean_recall10": 0.9250000000000003,
+        "median_latency_ms_tuning_only": 12.6089375,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 16.7337958,
+        "plan_uses_diskann": true
+      }
+    },
+    "query_rescore": 200,
+    "query_search_list_size": 150
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 0.019000000000000003,
+        "median_latency_ms_tuning_only": 0.8533545,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 2.2761523999999995,
+        "plan_uses_diskann": true
+      },
+      "w2_1": {
+        "mean_recall10": 0.27599999999999997,
+        "median_latency_ms_tuning_only": 20.864583,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 24.712897899999998,
+        "plan_uses_diskann": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.975,
+        "median_latency_ms_tuning_only": 19.054292,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 22.75147775,
+        "plan_uses_diskann": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9930000000000001,
+        "median_latency_ms_tuning_only": 18.3435205,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 24.258149999999997,
+        "plan_uses_diskann": true
+      },
+      "w3": {
+        "mean_recall10": 0.971,
+        "median_latency_ms_tuning_only": 19.6966255,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 23.927418449999998,
+        "plan_uses_diskann": true
+      }
+    },
+    "query_rescore": 400,
+    "query_search_list_size": 200
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 0.019000000000000003,
+        "median_latency_ms_tuning_only": 0.868125,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 2.594274349999999,
+        "plan_uses_diskann": true
+      },
+      "w2_1": {
+        "mean_recall10": 0.29899999999999993,
+        "median_latency_ms_tuning_only": 30.8290625,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 35.397558,
+        "plan_uses_diskann": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.9840000000000001,
+        "median_latency_ms_tuning_only": 28.9488755,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 32.9199518,
+        "plan_uses_diskann": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9990000000000001,
+        "median_latency_ms_tuning_only": 26.3116045,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 32.7068982,
+        "plan_uses_diskann": true
+      },
+      "w3": {
+        "mean_recall10": 0.982,
+        "median_latency_ms_tuning_only": 27.1687085,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 33.02046935,
+        "plan_uses_diskann": true
+      }
+    },
+    "query_rescore": 600,
+    "query_search_list_size": 300
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 0.019000000000000003,
+        "median_latency_ms_tuning_only": 0.893729,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 4.19473895,
+        "plan_uses_diskann": true
+      },
+      "w2_1": {
+        "mean_recall10": 0.308,
+        "median_latency_ms_tuning_only": 32.4035415,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 43.05377355,
+        "plan_uses_diskann": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.985,
+        "median_latency_ms_tuning_only": 37.474625,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 42.42290625,
+        "plan_uses_diskann": true
+      },
+      "w2_50": {
+        "mean_recall10": 0.9990000000000001,
+        "median_latency_ms_tuning_only": 33.726457999999994,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 41.396010399999994,
+        "plan_uses_diskann": true
+      },
+      "w3": {
+        "mean_recall10": 0.9880000000000001,
+        "median_latency_ms_tuning_only": 35.021104,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 42.24789165,
+        "plan_uses_diskann": true
+      }
+    },
+    "query_rescore": 800,
+    "query_search_list_size": 400
+  },
+  {
+    "by_workload": {
+      "w2_0_1": {
+        "mean_recall10": 0.019000000000000003,
+        "median_latency_ms_tuning_only": 1.0141040000000001,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 3.687815199999998,
+        "plan_uses_diskann": true
+      },
+      "w2_1": {
+        "mean_recall10": 0.308,
+        "median_latency_ms_tuning_only": 36.771603999999996,
+        "min_returned": 1,
+        "p95_latency_ms_tuning_only": 48.21348605,
+        "plan_uses_diskann": true
+      },
+      "w2_10": {
+        "mean_recall10": 0.99,
+        "median_latency_ms_tuning_only": 58.5623755,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 87.64079519999999,
+        "plan_uses_diskann": true
+      },
+      "w2_50": {
+        "mean_recall10": 1.0,
+        "median_latency_ms_tuning_only": 47.8319165,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 63.87918749999999,
+        "plan_uses_diskann": true
+      },
+      "w3": {
+        "mean_recall10": 0.9930000000000001,
+        "median_latency_ms_tuning_only": 51.163958,
+        "min_returned": 10,
+        "p95_latency_ms_tuning_only": 61.2614622,
+        "plan_uses_diskann": true
+      }
+    },
+    "query_rescore": 1000,
+    "query_search_list_size": 600
+  }
+]

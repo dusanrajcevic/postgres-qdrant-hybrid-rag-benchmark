@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: >
+  If you use this benchmark software, please cite this
+  software record and the accompanying paper.
+title: "Relational Extensions vs. Dedicated Vector Engines: An Empirical Performance Benchmark of PostgreSQL (pgvector) and Qdrant in Hybrid RAG Architectures"
+type: software
+version: 1.0.0
+date-released: 2026-08-24
+license: MIT
+authors:
+  - family-names: "Rajčević"
+    given-names: "Dušan"
+  - family-names: "Šimović"
+    given-names: "Vladimir"
+keywords:
+  - PostgreSQL
+  - pgvector
+  - pgvectorscale
+  - Qdrant
+  - vector search
+  - hybrid retrieval
+  - RAG
+  - HNSW
+  - DiskANN

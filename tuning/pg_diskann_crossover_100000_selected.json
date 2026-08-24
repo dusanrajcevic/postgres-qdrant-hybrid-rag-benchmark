@@ -1,0 +1,56 @@
+{
+  "dataset_size": 100000,
+  "measurement_query_ranks_reserved": [
+    100,
+    999
+  ],
+  "methodological_note": "Sparse/compound predicates use scalar-index-first exact ranking because the labeled DiskANN graph did not satisfy the predeclared Recall@10 and result-completeness target at 1% and 0.1% selectivity on tuning queries.",
+  "purpose": "PG-DISKANN FILTERED STRATEGY SELECTION ONLY",
+  "strategy": {
+    "w2_0_1": {
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 0.5819585,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 1.5064430999999998,
+      "strategy": "scalar_index_first_exact_vector_ranking"
+    },
+    "w2_1": {
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 2.321479,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 4.098274999999999,
+      "strategy": "scalar_index_first_exact_vector_ranking"
+    },
+    "w2_10": {
+      "access_path": "label-aware DiskANN",
+      "mean_recall10": 0.9510000000000002,
+      "median_latency_ms_tuning_only": 7.315896,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 9.689075,
+      "query_rescore": 100,
+      "query_search_list_size": 100
+    },
+    "w2_50": {
+      "access_path": "label-aware DiskANN",
+      "mean_recall10": 0.9710000000000001,
+      "median_latency_ms_tuning_only": 7.6132290000000005,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 9.832226749999998,
+      "query_rescore": 100,
+      "query_search_list_size": 100
+    },
+    "w3": {
+      "mean_recall10": 1.0,
+      "median_latency_ms_tuning_only": 20.8694585,
+      "min_returned": 10,
+      "p95_latency_ms_tuning_only": 23.2657774,
+      "strategy": "scalar_index_first_exact_vector_ranking"
+    }
+  },
+  "target_recall10": 0.95,
+  "tuning_query_ranks": [
+    0,
+    99
+  ],
+  "warning": "All latency values are tuning-only, not paper results."
+}

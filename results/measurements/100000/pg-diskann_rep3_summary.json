@@ -1,0 +1,64 @@
+{
+  "dataset_size": 100000,
+  "engine": "pg-diskann",
+  "repetition": 3,
+  "warning": "These ARE held-out measurement results; do not replace them with tuning values.",
+  "workloads": {
+    "w1": {
+      "mean_latency_ms": 6.640000965555556,
+      "mean_recall10": 0.9752222222222223,
+      "median_latency_ms": 6.4245625,
+      "min_returned": 10,
+      "p95_latency_ms": 8.976441699999999,
+      "queries": 900
+    },
+    "w2_0_1": {
+      "mean_latency_ms": 0.7289499977777777,
+      "mean_recall10": 1.0,
+      "median_latency_ms": 0.590271,
+      "min_returned": 10,
+      "p95_latency_ms": 1.6513398999999966,
+      "queries": 900
+    },
+    "w2_1": {
+      "mean_latency_ms": 2.9256951744444444,
+      "mean_recall10": 1.0,
+      "median_latency_ms": 2.604125,
+      "min_returned": 10,
+      "p95_latency_ms": 5.381741649999999,
+      "queries": 900
+    },
+    "w2_10": {
+      "mean_latency_ms": 6.780826508888889,
+      "mean_recall10": 0.9465555555555557,
+      "median_latency_ms": 6.4714585,
+      "min_returned": 10,
+      "p95_latency_ms": 9.407472250000001,
+      "queries": 900
+    },
+    "w2_50": {
+      "mean_latency_ms": 6.446547022222223,
+      "mean_recall10": 0.9731111111111111,
+      "median_latency_ms": 6.247354,
+      "min_returned": 10,
+      "p95_latency_ms": 8.7657128,
+      "queries": 900
+    },
+    "w3": {
+      "mean_latency_ms": 22.673269616666666,
+      "mean_recall10": 1.0,
+      "median_latency_ms": 22.3834165,
+      "min_returned": 10,
+      "p95_latency_ms": 25.55939965,
+      "queries": 900
+    },
+    "w4_acl": {
+      "mean_latency_ms": 2.797960676666667,
+      "mean_recall10": 1.0,
+      "median_latency_ms": 2.4795835,
+      "min_returned": 10,
+      "p95_latency_ms": 5.010100349999999,
+      "queries": 900
+    }
+  }
+}

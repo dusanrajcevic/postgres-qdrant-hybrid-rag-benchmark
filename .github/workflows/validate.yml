@@ -1,0 +1,22 @@
+name: Validate research release
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate archived measurements
+        run: python analysis/validate_release.py
+      - name: Build combined paper summary
+        run: python analysis/build_paper_summary.py
+      - name: Confirm generated summary is unchanged
+        run: git diff --exit-code -- results/paper_summary.csv results/paper_summary.json

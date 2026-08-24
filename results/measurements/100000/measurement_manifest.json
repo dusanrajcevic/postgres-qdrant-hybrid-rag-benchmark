@@ -1,0 +1,25 @@
+{
+  "config_sha256": "d4630f0b9173ecb77442210025ec5766a83d68713222fc362cd998a8d22f6770",
+  "dataset_size": 100000,
+  "engines_started": [
+    "pg-diskann",
+    "pg-hnsw",
+    "qdrant"
+  ],
+  "measurement_query_count": 900,
+  "measurement_query_ranks": [
+    100,
+    999
+  ],
+  "note": "No tuning/query-time parameter selection is performed by this runner.",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "purpose": "HELD-OUT PAPER MEASUREMENT MANIFEST",
+  "python": "3.11.11 (main, Apr  4 2025, 05:24:59) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "repetitions": 3,
+  "runner_sha256": "0cb0965e840a9a86f6f08d69fcf2fee51a7c8672f08fd6d895c7e274b9f61c0a",
+  "warmup_executions_per_workload_per_repetition": 200,
+  "warmup_source_query_ranks": [
+    0,
+    99
+  ]
+}

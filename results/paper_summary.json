@@ -1,0 +1,422 @@
+[
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "100000",
+    "workload": "w1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "2.0234164999999997",
+    "p95_latency_ms_pooled": "4.263685749999997",
+    "mean_recall10_pooled": "0.9567777777777778",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "100000",
+    "workload": "w2_50",
+    "observations": "2700",
+    "median_latency_ms_pooled": "2.06625",
+    "p95_latency_ms_pooled": "3.4264999999999994",
+    "mean_recall10_pooled": "0.9475555555555554",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "100000",
+    "workload": "w2_10",
+    "observations": "2700",
+    "median_latency_ms_pooled": "25.641917",
+    "p95_latency_ms_pooled": "28.123837199999993",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "100000",
+    "workload": "w2_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "2.5120215000000004",
+    "p95_latency_ms_pooled": "4.8772034999999985",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "100000",
+    "workload": "w2_0_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "0.564562",
+    "p95_latency_ms_pooled": "1.6334982499999968",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "100000",
+    "workload": "w3",
+    "observations": "2700",
+    "median_latency_ms_pooled": "19.863812000000003",
+    "p95_latency_ms_pooled": "22.73766315",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "100000",
+    "workload": "w4_acl",
+    "observations": "2700",
+    "median_latency_ms_pooled": "2.5035415",
+    "p95_latency_ms_pooled": "4.910362499999995",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "100000",
+    "workload": "w1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.499125",
+    "p95_latency_ms_pooled": "9.041152399999996",
+    "mean_recall10_pooled": "0.9752222222222222",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "100000",
+    "workload": "w2_50",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.228896",
+    "p95_latency_ms_pooled": "8.85712645",
+    "mean_recall10_pooled": "0.9731111111111113",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "100000",
+    "workload": "w2_10",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.361271",
+    "p95_latency_ms_pooled": "9.1239923",
+    "mean_recall10_pooled": "0.9465555555555555",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "100000",
+    "workload": "w2_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "2.6720625",
+    "p95_latency_ms_pooled": "5.086692299999999",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "100000",
+    "workload": "w2_0_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "0.589",
+    "p95_latency_ms_pooled": "1.5730062499999993",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "100000",
+    "workload": "w3",
+    "observations": "2700",
+    "median_latency_ms_pooled": "22.287582999999998",
+    "p95_latency_ms_pooled": "24.914496149999994",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "100000",
+    "workload": "w4_acl",
+    "observations": "2700",
+    "median_latency_ms_pooled": "2.47925",
+    "p95_latency_ms_pooled": "4.9029687499999905",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "100000",
+    "workload": "w1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.243688",
+    "p95_latency_ms_pooled": "13.354781849999993",
+    "mean_recall10_pooled": "0.9682222222222222",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "100000",
+    "workload": "w2_50",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.481332999999999",
+    "p95_latency_ms_pooled": "9.123493399999996",
+    "mean_recall10_pooled": "0.9623333333333334",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "100000",
+    "workload": "w2_10",
+    "observations": "2700",
+    "median_latency_ms_pooled": "8.586479",
+    "p95_latency_ms_pooled": "11.337682999999998",
+    "mean_recall10_pooled": "0.998111111111111",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "100000",
+    "workload": "w2_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "7.3717915000000005",
+    "p95_latency_ms_pooled": "11.768798249999996",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "100000",
+    "workload": "w2_0_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.832",
+    "p95_latency_ms_pooled": "11.72674104999999",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "100000",
+    "workload": "w3",
+    "observations": "2700",
+    "median_latency_ms_pooled": "8.0347705",
+    "p95_latency_ms_pooled": "10.223093149999999",
+    "mean_recall10_pooled": "0.9998888888888888",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "100000",
+    "workload": "w4_acl",
+    "observations": "2700",
+    "median_latency_ms_pooled": "11.529187499999999",
+    "p95_latency_ms_pooled": "18.661247899999996",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "250000",
+    "workload": "w1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "2.440375",
+    "p95_latency_ms_pooled": "5.081741649999999",
+    "mean_recall10_pooled": "0.9504444444444445",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "250000",
+    "workload": "w2_50",
+    "observations": "2700",
+    "median_latency_ms_pooled": "209.33697949999998",
+    "p95_latency_ms_pooled": "216.1732006",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "250000",
+    "workload": "w2_10",
+    "observations": "2700",
+    "median_latency_ms_pooled": "62.566978500000005",
+    "p95_latency_ms_pooled": "66.22940064999999",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "250000",
+    "workload": "w2_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.0173755",
+    "p95_latency_ms_pooled": "9.020642299999999",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "250000",
+    "workload": "w2_0_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "0.9699169999999999",
+    "p95_latency_ms_pooled": "1.8544264499999972",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "250000",
+    "workload": "w3",
+    "observations": "2700",
+    "median_latency_ms_pooled": "61.384146",
+    "p95_latency_ms_pooled": "65.58184164999999",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-hnsw",
+    "dataset_size": "250000",
+    "workload": "w4_acl",
+    "observations": "2700",
+    "median_latency_ms_pooled": "5.812979",
+    "p95_latency_ms_pooled": "9.049617299999996",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "250000",
+    "workload": "w1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "7.911167",
+    "p95_latency_ms_pooled": "10.483288949999997",
+    "mean_recall10_pooled": "0.9742222222222222",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "250000",
+    "workload": "w2_50",
+    "observations": "2700",
+    "median_latency_ms_pooled": "7.8160625",
+    "p95_latency_ms_pooled": "10.116616049999996",
+    "mean_recall10_pooled": "0.965111111111111",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "250000",
+    "workload": "w2_10",
+    "observations": "2700",
+    "median_latency_ms_pooled": "11.8502915",
+    "p95_latency_ms_pooled": "15.56277675",
+    "mean_recall10_pooled": "0.947888888888889",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "250000",
+    "workload": "w2_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.480916499999999",
+    "p95_latency_ms_pooled": "9.497985699999996",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "250000",
+    "workload": "w2_0_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "1.0594165",
+    "p95_latency_ms_pooled": "2.776341049999993",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "250000",
+    "workload": "w3",
+    "observations": "2700",
+    "median_latency_ms_pooled": "20.5079165",
+    "p95_latency_ms_pooled": "25.5579878",
+    "mean_recall10_pooled": "0.9666666666666667",
+    "min_returned": "10"
+  },
+  {
+    "engine": "pg-diskann",
+    "dataset_size": "250000",
+    "workload": "w4_acl",
+    "observations": "2700",
+    "median_latency_ms_pooled": "5.906333500000001",
+    "p95_latency_ms_pooled": "8.698289599999994",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "250000",
+    "workload": "w1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "7.3549785",
+    "p95_latency_ms_pooled": "11.875512799999987",
+    "mean_recall10_pooled": "0.9775555555555556",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "250000",
+    "workload": "w2_50",
+    "observations": "2700",
+    "median_latency_ms_pooled": "7.0395205",
+    "p95_latency_ms_pooled": "11.366393449999997",
+    "mean_recall10_pooled": "0.9476666666666668",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "250000",
+    "workload": "w2_10",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.6710625",
+    "p95_latency_ms_pooled": "11.433316349999997",
+    "mean_recall10_pooled": "0.9814444444444445",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "250000",
+    "workload": "w2_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "6.758062499999999",
+    "p95_latency_ms_pooled": "11.142349349999998",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "250000",
+    "workload": "w2_0_1",
+    "observations": "2700",
+    "median_latency_ms_pooled": "5.7805835",
+    "p95_latency_ms_pooled": "9.75440355",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "250000",
+    "workload": "w3",
+    "observations": "2700",
+    "median_latency_ms_pooled": "8.7980835",
+    "p95_latency_ms_pooled": "13.569760699999994",
+    "mean_recall10_pooled": "0.9632222222222222",
+    "min_returned": "10"
+  },
+  {
+    "engine": "qdrant",
+    "dataset_size": "250000",
+    "workload": "w4_acl",
+    "observations": "2700",
+    "median_latency_ms_pooled": "10.788541500000001",
+    "p95_latency_ms_pooled": "16.27068335",
+    "mean_recall10_pooled": "1.0",
+    "min_returned": "10"
+  }
+]
