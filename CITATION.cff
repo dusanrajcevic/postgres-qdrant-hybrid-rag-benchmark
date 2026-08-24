@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: >
   If you use this benchmark software, please cite this
-  software record and the accompanying paper.
+  release and the accompanying paper.
 title: "Relational Extensions vs. Dedicated Vector Engines: An Empirical Performance Benchmark of PostgreSQL (pgvector) and Qdrant in Hybrid RAG Architectures"
 type: software
 version: 1.0.0
@@ -12,6 +12,10 @@ authors:
     given-names: "Dušan"
   - family-names: "Šimović"
     given-names: "Vladimir"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22076090"
+repository-code: "https://github.com/dusanrajcevic/postgres-qdrant-hybrid-rag-benchmark"
 keywords:
   - PostgreSQL
   - pgvector

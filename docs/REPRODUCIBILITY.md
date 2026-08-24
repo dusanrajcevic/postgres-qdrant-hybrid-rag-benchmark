@@ -1,5 +1,13 @@
 # Reproducing the benchmark
 
+## Archived benchmark version
+
+The exact repository version associated with the reported experiments is archived on Zenodo:
+
+https://doi.org/10.5281/zenodo.22076090
+
+The corresponding Git tag is `v1.0.0-paper`.
+
 This document describes the shortest path from a fresh checkout to regenerated data and final measurements. The final CSVs already included under `results/measurements/` should be treated as the archived paper outputs. New runs should be written separately if they are performed on different hardware or software versions.
 
 ## 1. Host setup

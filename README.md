@@ -1,5 +1,7 @@
 # PostgreSQL and Qdrant Hybrid RAG Benchmark
 
+[![DOI](https://zenodo.org/badge/1344575339.svg)](https://doi.org/10.5281/zenodo.22076089)
+
 Reproduction code and held-out measurements for the manuscript **Relational Extensions vs. Dedicated Vector Engines: An Empirical Performance Benchmark of PostgreSQL (pgvector) and Qdrant in Hybrid RAG Architectures** by Dušan Rajčević and Vladimir Šimović.
 
 The benchmark compares three single-node retrieval configurations under pure vector, metadata-filtered, compound metadata, and live permission-aware workloads:
@@ -178,7 +180,13 @@ See [`docs/DATA.md`](docs/DATA.md) for full data provenance, sampling details, m
 
 ## Citation
 
-Machine-readable citation metadata is provided in [`CITATION.cff`](CITATION.cff). The paper release is version 1.0.0 and is tagged `v1.0.0-paper`
+The exact software release used for the manuscript has been archived on Zenodo.
+
+If you use this benchmark implementation, configurations, or experimental artifacts, please cite:
+
+Rajčević, D., & Šimović, V. (2026). *Relational Extensions vs. Dedicated Vector Engines: An Empirical Performance Benchmark of PostgreSQL (pgvector) and Qdrant in Hybrid RAG Architectures* (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.22076090
+
+Machine-readable citation metadata is provided in [`CITATION.cff`](CITATION.cff).
 
 ## License
 
